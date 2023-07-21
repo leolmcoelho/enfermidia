@@ -1,0 +1,35 @@
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 17px;
+    margin: 20px 0;
+}
+
+input {
+    border-radius: 5px;
+    min-width: 50%;
+
+    //background-color: rgb(4, 148, 102);
+    //color: #fff;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 300px;
+}
+
+h1 {
+    font-size: 17px;
+    margin: 10px;
+}
+
+fieldset{
+    display: flex;
+}
+
+mat-icon{
+    margin-left: -35px;
+    margin-top: 10px;
+}

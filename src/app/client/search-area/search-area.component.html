@@ -1,0 +1,13 @@
+<div>
+    <h1>Termos Técnicos</h1>
+    <fieldset>
+        <input type="text" [(ngModel)]="searchTerm" placeholder="Pesquisar Termo..." (keyup)="search()">
+        <span  (click)="clearSearch()">
+          <mat-icon>{{ isSearching ? 'clear' : 'search' }}</mat-icon>
+        </span>
+   
+    </fieldset>
+    
+      
+  </div>
+  

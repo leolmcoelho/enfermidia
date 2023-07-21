@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="container2">
+    <ng-container *ngIf="filteredItems.length > 0; else noItemsMessage">
+      <ng-container *ngFor="let item of filteredItems">
+        <mat-accordion>
+          <mat-expansion-panel
+            (opened)="item.panelOpen = true" (closed)="item.panelOpen = false"
+            [expanded]="item.panelOpen"
+          >
+            <mat-expansion-panel-header>
+              <mat-panel-title>{{ item.termo }}</mat-panel-title>
+              <mat-panel-description>
+                clique para {{ item.panelOpen ? 'fechar' : 'abrir' }}
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p>{{ item.explicacao }}</p>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </ng-container>
+    </ng-container>
+    <ng-template #noItemsMessage>
+      <div class="error">
+        <p>Nenhum item encontrado. Verifique o termo utilizado na pesquisa e tente novamente.</p>
+
+      </div>
+          </ng-template>
+  </div>
+</div>
