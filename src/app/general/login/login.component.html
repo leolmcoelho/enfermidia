@@ -1,1 +1,27 @@
-<p>login works!</p>
+
+
+<div class="container-login">
+    <div id="form" class="login">
+        <div class="img">
+            <img src="../assets/icons/android/android-launchericon-72-72.png" alt="" />
+            <p>Enfermidia</p>
+        </div>
+
+        <div class="fields">
+            <input type="text" id="usuario" name="usuario" [(ngModel)]="user.usuario" placeholder="Usuário" required />
+        </div>
+
+        <div class="fields">
+            <input type="password" id="password" name="password" [(ngModel)]="user.password" placeholder="Senha"
+                required />
+        </div>
+
+        <div id="entrar" >
+            <input type="submit" name="loginbutton" id="loginbutton" class="btn-login" value="Entrar"
+                (click)="login()" />
+        </div>
+        <div class="esqueceu">
+            <a routerLink='/recovery' id="esqueceu">Esqueceu sua senha?</a>
+        </div>
+    </div>
+</div>

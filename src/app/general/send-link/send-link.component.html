@@ -1,0 +1,13 @@
+<app-header></app-header>
+<div class="container-sendlink">
+    <div id="form" class="sendlink">
+
+        <h2>Redefinir Senha</h2>
+        <div class="fields">
+            <label for="email">Digite seu e-mail</label>
+            <input type="email" id="email" [(ngModel)]="emailAddress" />
+        </div>
+
+        <button class="btn-sendlink" (click)="sendLink()">Enviar</button>
+    </div>
+</div>

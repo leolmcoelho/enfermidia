@@ -1,0 +1,98 @@
+* {
+    //width: 100vw;
+    //height: 100vh;
+    background-color: #fafafa;
+}
+
+.container-login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+
+    .login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+
+                //max-width: 150px;
+                //max-height: 100px;
+                //width: auto;
+                //height: auto;
+                border: none;
+            }
+
+            p {
+                color: rgb(4, 148, 102);
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            margin-bottom: 30px;
+        }
+
+
+        .fields {
+            input {
+                text-indent: 20px;
+                border: #ccc 1px solid;
+                border-radius: 5px;
+                padding: 5px 0px;
+                width: 250px;
+                height: 30px;
+                margin-top: 10px;
+            }
+        }
+
+        .btn-login {
+            width: 250px;
+            height: 30px;
+            margin-top: 15px;
+            border: rgb(4, 148, 102) 1px solid;
+            border-radius: 5px;
+            background: rgb(4, 148, 102);
+            color: #ccc;
+            font-weight: 600;
+        }
+
+        .esqueceu {
+            margin-top: 20px;
+
+            a {
+                text-decoration: none;
+                color: rgb(55, 194, 196);
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (orientation: landscape) and (min-width: 800px) {
+    .container-login {
+
+        .login {
+            .fields {
+                input {
+                    width: 350px;
+                    height: 40px;
+                }
+            }
+
+            .btn-login {
+                width: 350px;
+                height: 40px;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.install-bar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    bottom: 0px;
+    //right: 20px;
+    width: 100vw;
+    padding: 20px;
+    
+    background-color: rgb(4, 148, 102);
+    color: #fff;
+    //border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
+    z-index: 10000;
+  }
+  
+  .install-bar button {
+    border: none;
+    background: none;
+    color: #fff;
+
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+  }
+  
+  .install-bar button:hover {
+    text-decoration: underline;
+  }
+  
+  .install-bar.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  img{
+    width: 30px;
+  }

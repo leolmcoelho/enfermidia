@@ -1,0 +1,35 @@
+/* Estilize o novo contêiner */
+.container3 {
+    position: relative;
+  }
+
+  .fixo{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+  }
+  
+  app-header {
+    //position: fixed;
+    //top: 0;
+  }
+
+  /* Posicione o app-search-area de forma fixa no início da tela */
+  app-search-area {
+    background-color: #fff;
+    //position: fixed;
+    //top: 0;
+    //left: 0;
+    width: 100%;
+    z-index: 99; /* Certifique-se de que o search-area esteja acima dos outros elementos */
+  }
+  
+  /* Adicione margem ao app-list-items para evitar que ele fique sob o app-search-area fixo */
+  app-list-items {
+    position: relative;
+    top: 220px;
+    margin-top: 60px; 
+    z-index: 1;/* Ajuste essa margem conforme a altura do app-search-area */
+  }
+  

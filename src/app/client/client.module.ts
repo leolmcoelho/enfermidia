@@ -11,6 +11,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import {MatIconModule} from '@angular/material/icon';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -19,7 +21,8 @@ import { MatInputModule } from '@angular/material/input';
     DicionaryComponent,
     SearchAreaComponent,
     ListItemsComponent,
-    FilterByPropertyPipe
+    FilterByPropertyPipe,
+
   ],
   imports: [
     CommonModule, // Add CommonModule here
@@ -27,7 +30,9 @@ import { MatInputModule } from '@angular/material/input';
     MatExpansionModule,
     MatIconModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    InfiniteScrollModule,
+    SharedModule
   ],
   exports: [
     DicionaryComponent
