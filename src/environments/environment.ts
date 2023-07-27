@@ -1,4 +1,5 @@
 export const environment = {
-    production: false,
-    // outras configurações específicas do ambiente podem ser adicionadas aqui
-  };
+  production: true,
+  //apiUrl: 'https://api.enfermidia.app.br'
+  apiUrl: ''
+};
